@@ -56,6 +56,8 @@ margin: 0 auto;
   text-align: center;
   height: 72px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -78,11 +80,15 @@ margin: 0 auto;
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-item a:hover,
 .navigation-list-item a:focus {
-  color: #404bbf;
+   color: #fff;
+  background-color: #404bbf;
+  border-radius: 4px;
+  outline: none;
 }
 
 .navigation-list-link.current {
@@ -110,6 +116,21 @@ margin: 0 auto;
   display: flex;
   gap: 40px;
 }
+
+/* ? */
+
+
+.navigation-list-link.current {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list:hover,
+.navigation-list:focus,
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+
 
 /* Contact */
 
@@ -183,6 +204,7 @@ margin: 0 auto;
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -453,6 +475,7 @@ border-top: none;
 .portfolio-list li:hover .thumb-text,
 .portfolio-list-item:hover .thumb-text {
   transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 
 /* Footer */
